@@ -2,14 +2,21 @@
   "name": "md-links",
   "version": "1.0.0",
   "description": "Identificar archivos.md y analizar links y su estatus",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "author": {
-    "name": "Vanessa Castro",
-    "email": "vanessagm.91@gmail.com",
+    "name": "Vanessa Castro",    
     "url": "https://github.com/Vanecmorales/SCL021-md-links"
   },
-  "bin": "src/index.js",
+  "bin": {
+    "mdlinks": "./src/index.js"
+  },
   "engines": {
     "node": ">=16.x"
+  },
+  "scripts": {
+    "mdlinks": "node src/index.js"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
   }
 }
