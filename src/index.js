@@ -74,23 +74,3 @@ readDirectory(absoluteRoute)
   .finally(() => {
     console.log({ urlResult });
   });
-
-
-// 7- funcion que checkea el estado de los links
-// const checkLinks = () => {
-//   linkCheck('https://github.com/Vanecmorales/SCL021-cipher', function (err, result) {
-//     if (err) {
-//         console.error(err);
-//         return;
-//     }
-//     console.log(`${result.link} is ${result.status}`);
-// });
-// }
-// console.log(checkLinks)
-
-//index.js: Desde este archivo debes exportar una función (mdLinks).
-// const mdLinks = (absoluteRoute, option) => {
-//   // ...
-// };
-
-// module.export = { mdLinks };
