@@ -60,7 +60,7 @@ const extractLinks = (absoluteRoute) => {
   return links;
 };
 
-// 6.1- Muestras todos los links en un solo arreglo
+// 6.1- Muestras todos los links de diferentes archivos en un solo arreglo
 let urlResult = [];
 readDirectory(absoluteRoute)
   .then((files) => {
@@ -76,7 +76,7 @@ readDirectory(absoluteRoute)
   });
 
 
-// // 7- funcion que checkea el estado de los links
+// 7- funcion que checkea el estado de los links
 // const checkLinks = () => {
 //   linkCheck('https://github.com/Vanecmorales/SCL021-cipher', function (err, result) {
 //     if (err) {
@@ -86,6 +86,7 @@ readDirectory(absoluteRoute)
 //     console.log(`${result.link} is ${result.status}`);
 // });
 // }
+// console.log(checkLinks)
 
 //index.js: Desde este archivo debes exportar una función (mdLinks).
 // const mdLinks = (absoluteRoute, option) => {
